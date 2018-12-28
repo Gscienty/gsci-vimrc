@@ -59,6 +59,9 @@ Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
 Plug 'spf13/vim-autoclose'
 Plug 'tpope/vim-endwise'
+Plug 'haya14busa/incsearch.vim'
+Plug 'junegunn/vim-slash'
+Plug 'Shougo/echodoc.vim'
 
 call plug#end()
 
