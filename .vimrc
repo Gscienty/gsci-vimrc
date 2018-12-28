@@ -126,6 +126,8 @@ nmap <leader>a= :Tabularize /^[^=]*\zs=<cr>
 vmap <leader>a= :Tabularize /^[^=]*\zs=<cr>
 nmap <leader>a= :Tabularize /,<cr>
 vmap <leader>a= :Tabularize /,<cr>
+nmap <leader>a| :Tabularize /|<cr>
+vmap <leader>a| :Tabularize /|<cr>
 
 " airline
 let g:airline_theme = 'solarized'
@@ -152,3 +154,9 @@ nnoremap <c-n> :bn<cr>
 nnoremap <c-p> :bp<cr>
 nnoremap <leader>d :bd<cr>
 nnoremap <leader>D :bD<cr>
+
+" incsearch
+map / <Plug>(incsearch-forward)
+map ? <Plug>(incsearch-backward)
+map g/ <Plug>(incsearch-stay)
+
