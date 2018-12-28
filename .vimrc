@@ -45,7 +45,9 @@ set autowrite
 set confirm
 
 set encoding=utf-8
-set encoding=utf-8
+
+set scrolljump=5
+set scrolloff=3
 
 call plug#begin('~/.vim/plugged')
 
@@ -129,6 +131,7 @@ vmap <leader>a= :Tabularize /,<cr>
 let g:airline_theme = 'solarized'
 let g:airline_left_sep = '>'
 let g:airline_right_sep = '<'
+let g:airline#extensions#tabline#enabled = 1
 
 " nerdtree
 map <c-n> <plug>NERDTreeTabsToggle<cr>
@@ -143,3 +146,9 @@ let NERDTreeShowHidden=1
 let NERDTreeKeepTreeInNewTab=1
 let g:nerdtree_tabs_open_on_gui_startup=0
 
+
+" buffer
+nnoremap <c-n> :bn<cr>
+nnoremap <c-p> :bp<cr>
+nnoremap <leader>d :bd<cr>
+nnoremap <leader>D :bD<cr>
