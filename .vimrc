@@ -53,6 +53,8 @@ Plug 'mbbill/undotree'
 Plug 'Valloric/YouCompleteMe'
 Plug 'majutsushi/tagbar'
 Plug 'godlygeek/tabular'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 call plug#end()
 
@@ -115,4 +117,10 @@ nmap <leader>a= :Tabularize /^[^=]*\zs=<cr>
 vmap <leader>a= :Tabularize /^[^=]*\zs=<cr>
 nmap <leader>a= :Tabularize /,<cr>
 vmap <leader>a= :Tabularize /,<cr>
+
+" airline
+let g:airline_theme = 'solarized'
+let g:airline_left_sep = '>'
+let g:airline_right_sep = '<'
+
 
