@@ -52,6 +52,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'mbbill/undotree'
 Plug 'Valloric/YouCompleteMe'
 Plug 'majutsushi/tagbar'
+Plug 'godlygeek/tabular'
 
 call plug#end()
 
@@ -106,3 +107,12 @@ let g:ycm_semantic_triggers.c = ['->', '.', ' ', '(', '[', '&',']']
 
 " tagbar
 nnoremap <silent> <leader>tt :TagbarToggle<cr>
+
+" tabular
+nmap <leader>a& :Tabularize /&<cr>
+vmap <leader>a& :Tabularize /&<cr>
+nmap <leader>a= :Tabularize /^[^=]*\zs=<cr>
+vmap <leader>a= :Tabularize /^[^=]*\zs=<cr>
+nmap <leader>a= :Tabularize /,<cr>
+vmap <leader>a= :Tabularize /,<cr>
+
