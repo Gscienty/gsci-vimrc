@@ -55,6 +55,7 @@ Plug 'majutsushi/tagbar'
 Plug 'godlygeek/tabular'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
+Plug 'scrooloose/nerdtree'
 
 call plug#end()
 
@@ -123,4 +124,15 @@ let g:airline_theme = 'solarized'
 let g:airline_left_sep = '>'
 let g:airline_right_sep = '<'
 
+" nerdtree
+map <c-n> <plug>NERDTreeTabsToggle<cr>
+map <leader>e :NERDTreeFind<cr>
 
+let NERDTreeShowBookmarks=1
+let NERDTreeIgnore=['\.py[cd]$', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$', '^\.svn$', '\.bzr$']
+let NERDTreeChDirMode=0
+let NERDTreeQuitOnOpen=1
+let NERDTreeMouseMode=2
+let NERDTreeShowHidden=1
+let NERDTreeKeepTreeInNewTab=1
+let g:nerdtree_tabs_open_on_gui_startup=0
