@@ -64,8 +64,21 @@ Plug 'tpope/vim-endwise'
 Plug 'haya14busa/incsearch.vim'
 Plug 'junegunn/vim-slash'
 Plug 'Shougo/echodoc.vim'
+Plug 'mileszs/ack.vim'
+Plug 'vim-scripts/gdbmgr'
+Plug 'junegunn/vim-easy-align'
+Plug 'easymotion/vim-easymotion'
+Plug 'kana/vim-textobj-user'
+Plug 'kana/vim-textobj-indent'
+Plug 'kana/vim-textobj-syntax'
+Plug 'kana/vim-textobj-function'
+Plug 'sgur/vim-textobj-parameter'
+Plug 'flazz/vim-colorschemes'
+Plug 'rhysd/clever-f.vim'
 
 call plug#end()
+
+set background=dark
 
 nnoremap <leader>e :edit $MYVIMRC<cr>
 nnoremap <leader>s :source $MYVIMRC<cr>
@@ -90,6 +103,7 @@ let g:ycm_complete_in_comments = 1
 let g:ycm_complete_in_strings = 1
 let g:ycm_server_python_interpreter = '/usr/bin/python'
 let g:ycm_python_binary_path = 'python'
+let g:ycm_global_ycm_extra_conf = '~/.ycm_extra_conf.py'
 
 nnoremap <leader>o :YcmCompleter GoToDeclaration<cr>
 nnoremap <leader>O :YcmCompleter GoToDefinition<cr>
@@ -126,8 +140,9 @@ nmap <leader>a= :Tabularize /^[^=]*\zs=<cr>
 vmap <leader>a= :Tabularize /^[^=]*\zs=<cr>
 nmap <leader>a= :Tabularize /,<cr>
 vmap <leader>a= :Tabularize /,<cr>
-nmap <leader>a| :Tabularize /|<cr>
-vmap <leader>a| :Tabularize /|<cr>
+nmap <leader>a\| :Tabularize /\|<cr>
+vmap <leader>a\| :Tabularize /\|<cr>
+
 
 " airline
 let g:airline_theme = 'solarized'
@@ -136,8 +151,7 @@ let g:airline_right_sep = '<'
 let g:airline#extensions#tabline#enabled = 1
 
 " nerdtree
-map <c-n> <plug>NERDTreeTabsToggle<cr>
-map <leader>e :NERDTreeFind<cr>
+map <leader>n :NERDTreeToggle<cr>
 
 let NERDTreeShowBookmarks=1
 let NERDTreeIgnore=['\.py[cd]$', '\~$', '\.swo$', '\.swp$', '^\.git$', '^\.hg$', '^\.svn$', '\.bzr$']
@@ -160,3 +174,15 @@ map / <Plug>(incsearch-forward)
 map ? <Plug>(incsearch-backward)
 map g/ <Plug>(incsearch-stay)
 
+" ack
+nnoremap <leader>A :Ack!<space>
+
+" easy-align
+xmap ga <Plug>(EasyAlign)
+nmap ga <Plug>(EasyAlign)
+
+" easymotion
+let g:EasyMotion_smartcase = 1
+
+" echodoc
+let g:echodoc_enable_at_startup = 1
