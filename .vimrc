@@ -75,6 +75,7 @@ Plug 'kana/vim-textobj-function'
 Plug 'sgur/vim-textobj-parameter'
 Plug 'flazz/vim-colorschemes'
 Plug 'rhysd/clever-f.vim'
+Plug 'davidhalter/jedi-vim'
 
 call plug#end()
 
@@ -93,6 +94,15 @@ autocmd BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | execute "
 " undotree
 nnoremap <leader>u :UndotreeToggle<cr>
 let g:undotree_SetFocusWhenToggle=1
+
+" jedi
+let g:jedi#goto_command = "<leader>g"
+let g:jedi#goto_assignments_command = "<leader>g"
+let g:jedi#goto_definitions_command = ""
+let g:jedi#documentation_command = "K"
+let g:jedi#usages_command = "<leader>N"
+let g:jedi#completions_command = "<C-Space>"
+let g:jedi#rename_command = "<leader>R"
 
 " YouCompleteMe
 let g:ycm_confirm_extra_conf = 0
@@ -131,7 +141,7 @@ let g:ycm_semantic_triggers =  {
 let g:ycm_semantic_triggers.c = ['->', '.', ' ', '(', '[', '&',']']
 
 " tagbar
-nnoremap <silent> <leader>tt :TagbarToggle<cr>
+nnoremap <silent> <leader>t :TagbarToggle<cr>
 
 " tabular
 nmap <leader>a& :Tabularize /&<cr>
