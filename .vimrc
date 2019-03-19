@@ -54,7 +54,7 @@ call plug#begin('~/.vim/plugged')
 Plug 'mbbill/undotree'
 Plug 'Valloric/YouCompleteMe'
 Plug 'majutsushi/tagbar'
-Plug 'godlygeek/tabular'
+Plug 'Yggdroot/LeaderF'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
@@ -141,7 +141,7 @@ let g:ycm_semantic_triggers =  {
 let g:ycm_semantic_triggers.c = ['->', '.', ' ', '(', '[', '&',']']
 
 " tagbar
-nnoremap <silent> <leader>t :TagbarToggle<cr>
+nnoremap <silent> <leader>t :LeaderfFunction!<cr>
 
 " tabular
 nmap <leader>a& :Tabularize /&<cr>
