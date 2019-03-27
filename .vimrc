@@ -76,6 +76,7 @@ Plug 'sgur/vim-textobj-parameter'
 Plug 'flazz/vim-colorschemes'
 Plug 'rhysd/clever-f.vim'
 Plug 'davidhalter/jedi-vim'
+Plug 'scrooloose/syntastic'
 
 call plug#end()
 
