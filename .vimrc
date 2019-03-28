@@ -78,10 +78,10 @@ Plug 'rhysd/clever-f.vim'
 Plug 'davidhalter/jedi-vim'
 Plug 'scrooloose/syntastic'
 Plug 'posva/vim-vue'
-Plugin 'tomtom/tlib_vim'
-Plugin 'MarcWeber/vim-addon-mw-utils'
-Plugin 'garbas/vim-snipmate'
-Plugin 'isRuslan/vim-es6'
+Plug 'tomtom/tlib_vim'
+Plug 'MarcWeber/vim-addon-mw-utils'
+Plug 'garbas/vim-snipmate'
+Plug 'isRuslan/vim-es6'
 
 call plug#end()
 
