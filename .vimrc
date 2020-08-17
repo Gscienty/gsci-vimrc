@@ -83,6 +83,8 @@ Plug 'MarcWeber/vim-addon-mw-utils'
 Plug 'garbas/vim-snipmate'
 Plug 'isRuslan/vim-es6'
 
+Plug 'voldikss/vim-floaterm'
+
 call plug#end()
 
 set background=dark
