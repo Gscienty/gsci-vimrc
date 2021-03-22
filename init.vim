@@ -185,3 +185,8 @@ map <leader>sc :FloatermNew<cr>
 map <leader>sd :FloatermKill<cr>
 map <leader>sn :FloatermNext<cr>
 map <leader>sp :FloatermPrev<cr>
+
+map! <c-h> <left>
+map! <c-j> <down>
+map! <c-k> <up>
+map! <c-k> <right>
