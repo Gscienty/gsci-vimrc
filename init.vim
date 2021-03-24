@@ -51,6 +51,10 @@ set scrolloff=3
 
 call plug#begin('~/.vim/plugged')
 
+" golang
+" Plug 'faith/vim-go'
+" Plug 'nsf/gocode'
+
 Plug 'Valloric/YouCompleteMe'
 Plug 'majutsushi/tagbar'
 Plug 'Yggdroot/LeaderF'
