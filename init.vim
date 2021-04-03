@@ -193,4 +193,4 @@ map <leader>sp :FloatermPrev<cr>
 map! <c-h> <left>
 map! <c-j> <down>
 map! <c-k> <up>
-map! <c-k> <right>
+map! <c-l> <right>
