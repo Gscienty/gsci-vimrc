@@ -52,7 +52,7 @@ flags = [
 # For a C project, you would set this to something like 'c99' instead of
 # 'c++11'.
 # '-std=c++14',
-'-std=c++14'
+'-std=c++14',
 # ...and the same thing goes for the magic -x option which specifies the
 # language that the files to be compiled are written in. This is mostly
 # relevant for c++ headers.
@@ -68,18 +68,6 @@ flags = [
 '/usr/local/include',
 '-isystem',
 '/usr/include/c++/4.8.5',
-'-I', '../nginx-1.15.12/src/core',
-'-I', '../nginx-1.15.12/src/event',
-'-I', '../nginx-1.15.12/src/event/modules',
-'-I', '../nginx-1.15.12/src/os/unix',
-'-I', '../nginx-1.15.12/objs',
-'-I', '../nginx-1.15.12/src/http',
-'-I', '../nginx-1.15.12/src/http/modules',
-'-I', 'humha/',
-'-I',
-'./include',
-'-I',
-'/home/dockerroot/boost_1_69_0'
 
 #'-isystem',
 #'../BoostParts',
