@@ -77,6 +77,19 @@ Plug 'voldikss/vim-floaterm'
 
 Plug 'neoclide/coc.nvim'
 
+Plug 'mileszs/ack.vim'
+
+Plug 'nathanaelkane/vim-indent-guides'
+
+Plug 'APZelos/blamer.nvim'
+
+Plug 'neovim/nvim-lspconfig'
+Plug 'simrat39/rust-tools.nvim'
+Plug 'mfussenegger/nvim-dap'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-lua/popup.nvim'
+
 call plug#end()
 
 set background=dark
@@ -194,3 +207,19 @@ map! <c-h> <left>
 map! <c-j> <down>
 map! <c-k> <up>
 map! <c-l> <right>
+
+" floaterm
+map <leader>st :FloatermToggle<cr>
+map <leader>sc :FloatermNew<cr>
+map <leader>sd :FloatermKill<cr>
+map <leader>sn :FloatermNext<cr>
+map <leader>sp :FloatermPrev<cr>
+
+map! <c-a> <left>
+map! <c-s> <down>
+map! <c-w> <up>
+map! <c-d> <right>
+
+colorscheme Atelier_EstuaryDark
+
+lua require('rust-tools').setup({}) 
